@@ -2,6 +2,14 @@
 
 Secure one-way hashing
 
+## Leiningen
+
+Add this line to the `:dependencies` in your project.clj
+
+```clojure
+[com.neatonk/shah 0.1.0]
+```
+
 ## Usage
 
 ```clojure
