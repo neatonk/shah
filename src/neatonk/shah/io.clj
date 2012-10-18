@@ -1,4 +1,4 @@
-(ns shah.io
+(ns neatonk.shah.io
   (:use [clojure.java.io :only [copy]])
   (:import [java.io ByteArrayOutputStream File FileInputStream]))
 

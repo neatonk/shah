@@ -1,18 +1,18 @@
-(ns shah.io-test
+(ns neatonk.shah.io-test
   (:require
    [clojure.test :refer [deftest is use-fixtures]]
    [clojure.test.generative :refer [defspec]]
-   [shah.test-helper :refer [once-fixture run-generative-tests]]
-   [shah.test-generators :refer
+   [neatonk.shah.test-helper :refer [once-fixture run-generative-tests]]
+   [neatonk.shah.test-generators :refer
     [generated-file random-bytes random-string random-ascii-string
      random-binary-file random-text-file random-ascii-file]]
-   [shah.io :refer [as-bytes]]))
+   [neatonk.shah.io :refer [as-bytes]]))
 
 (use-fixtures :once once-fixture)
 
 ;; a test to run all generative tests
 (deftest generative-tests
-  (is (run-generative-tests 'shah.io-test)))
+  (is (run-generative-tests 'neatonk.shah.io-test)))
 
 ;; testing bytes...
 (defspec as-bytes-test-gen-bytes

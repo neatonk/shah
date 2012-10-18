@@ -1,5 +1,5 @@
-(ns shah.test-generators
-  (:require [shah.test-helper :refer [mktemp]]
+(ns neatonk.shah.test-generators
+  (:require [neatonk.shah.test-helper :refer [mktemp]]
             [clojure.test.generative.generators :as gen]))
 
 

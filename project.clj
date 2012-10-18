@@ -1,4 +1,4 @@
-(defproject shah "0.1.0-SNAPSHOT"
+(defproject com.neatonk/shah "0.1.0"
   :description "Secure one-way hashing"
   :url "http://github.com/neatonk/shah"
   :license {:name "Eclipse Public License"

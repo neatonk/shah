@@ -6,7 +6,7 @@ Secure one-way hashing
 
 ```clojure
 (use '[clojure.java.io :only [file]])
-(use '[shah.digest :only [digest md5sum sha256sum]])
+(use '[neatonk.shah :only [digest md5sum sha256sum]])
 
 (digest "The quick brown fox jumps over the lazy dog" "MD5")
 ;; => #<byte[] [B@50d7c5>

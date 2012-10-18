@@ -1,17 +1,17 @@
-(ns shah.digest-test
+(ns neatonk.shah.digest-test
   (:require
    [clojure.test :refer [deftest testing is are use-fixtures]]
    [clojure.test.generative :refer [defspec]]
-   [shah.test-helper :refer
+   [neatonk.shah.test-helper :refer
     [once-fixture run-generative-tests hexchar?]]
-   [shah.test-generators :refer [random-bytes]]
-   [shah.digest :refer [md5sum sha256sum]]))
+   [neatonk.shah.test-generators :refer [random-bytes]]
+   [neatonk.shah :refer [md5sum sha256sum]]))
 
 (use-fixtures :once once-fixture)
 
 ;; a test to run all generative tests
 (deftest generative-tests
-  (is (run-generative-tests 'shah.digest-test)))
+  (is (run-generative-tests 'neatonk.shah.digest-test)))
 
 ;; md5sum tests
 

@@ -1,5 +1,5 @@
-(ns shah.digest
-  (:use [shah.io :only [as-bytes]])
+(ns neatonk.shah
+  (:use [neatonk.shah.io :only [as-bytes]])
   (:import [java.security MessageDigest]))
 
 (defn digest

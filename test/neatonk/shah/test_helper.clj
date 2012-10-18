@@ -1,4 +1,4 @@
-(ns shah.test-helper
+(ns neatonk.shah.test-helper
   (:require [clojure.java.io :refer [file]]
             [clojure.test.generative :refer [test-namespaces]]))
 
