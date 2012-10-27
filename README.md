@@ -20,7 +20,7 @@ Add this line to the `:dependencies` in your project.clj
 ;; => #<byte[] [B@50d7c5>
 
 (spit "path/to/somefile.txt" "The quick brown fox jumps over the lazy dog")
-(digest "path/to/somefile.txt" "MD5")
+(digest (file "path/to/somefile.txt") "MD5")
 ;; => #<byte[] [B@22db19d3>
 
 (md5sum "The quick brown fox jumps over the lazy dog")
